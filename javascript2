@@ -9,26 +9,28 @@
 <body>
     <script>
         //Prompt user for login name
-         let welcome = window.prompt("Please enter your login name");
+         let welcome = window.prompt("Who's there?");
         // Checks for correct username from user
         if (welcome === "Admin") {
             let password = window.prompt("What is the password?");
             if (password === "TheMaster") {
                 alert("Welcome");
             }
-            else if (password === "") {
+            else if (password === "" || password === (null)) {
                 alert("Canceled");
             }
             else {
                 alert("Wrong password");
             }
+        }
             
-        else if (welcome === ""){
+        else if (welcome === "" || welcome === (null)){
             alert("Canceled");
         }
         else {
             alert("I don't know you");
         }
+    
 
     </script>
 </body>
